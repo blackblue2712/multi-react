@@ -20,5 +20,5 @@ after_success:
 # Take those images and push them to docker hub
   - docker push liars2712/multi-react
   - docker push liars2712/multi-nginx
-  - docker push liars2712/multi-serevr
+  - docker push liars2712/multi-server
   - docker push liars2712/multi-worker
