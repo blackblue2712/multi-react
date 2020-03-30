@@ -15,10 +15,10 @@ after_success:
   - docker build -t liars2712/multi-worker ./worker
 
 # Login to docker CLI
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Take those images and push them to docker hub
-- docker push liars2712/multi-react
-- docker push liars2712/multi-nginx
-- docker push liars2712/multi-serevr
-- docker push liars2712/multi-worker
+  - docker push liars2712/multi-react
+  - docker push liars2712/multi-nginx
+  - docker push liars2712/multi-serevr
+  - docker push liars2712/multi-worker
